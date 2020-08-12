@@ -1,0 +1,8 @@
+02-08-2020 14:20:13.127 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.log - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3fabf088: startup date [Sun Aug 02 14:19:54 IST 2020]; root of context hierarchy
+02-08-2020 14:20:13.244 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.log - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-08-2020 14:20:13.245 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.log - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-08-2020 14:20:13.279 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.log - Detected @ExceptionHandler methods in appExceptionsHandler
+02-08-2020 14:20:14.067 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.log - Starting beans in phase 2147483647
+02-08-2020 14:20:14.068 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+02-08-2020 14:20:14.160 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+02-08-2020 14:20:14.256 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references

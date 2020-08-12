@@ -1,0 +1,2 @@
+02-08-2020 14:20:14.618 [main] INFO  c.a.a.w.i.r.UserRepositoryTest.log - Started UserRepositoryTest in 21.18 seconds (JVM running for 26.662)
+02-08-2020 14:20:55.046 [main] INFO  c.a.a.w.i.r.UserRepositoryTest.testGetVerifiedUsers - >>>>>>>>><<<<<<<<<<<<<<<< testGetVerifiedUsers +++++++++++++++++
