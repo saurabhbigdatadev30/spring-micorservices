@@ -99,7 +99,7 @@ public class UsersServiceImpl implements UsersService {
         logger.info("Before calling albums Microservice");
         List<AlbumResponseModel> albumsList = albumsServiceClient.getAlbums(userId);
         logger.info("After calling albums Microservice");
-        
+        logger.error("After calling albums Microservice");
 		userDto.setAlbums(albumsList);
 		
 		return userDto;
