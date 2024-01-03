@@ -29,6 +29,7 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
         String header = req.getHeader(SecurityConstants.HEADER_STRING);
         System.out.println("inside filter DEMO MAIN BRANCH");
         System.out.println("inside filter DEMO2 Commit new MAIN BRANCH");
+        System.out.println("inside filter DEMO MAIN BRANCH FETCH DEMO1");
         if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
             chain.doFilter(req, res);
             return;
