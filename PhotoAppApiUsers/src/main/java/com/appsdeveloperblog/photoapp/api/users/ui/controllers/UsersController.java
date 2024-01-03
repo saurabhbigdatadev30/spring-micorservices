@@ -43,6 +43,7 @@ public class UsersController {
 			)
 	public ResponseEntity<CreateUserResponseModel> createUser(@RequestBody CreateUserRequestModel userDetails)
 	{
+		System.out.println("THIS IS A createUser ----- >>>>>>>>>>>");
 		ModelMapper modelMapper = new ModelMapper(); 
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 		UserDto userDto = modelMapper.map(userDetails, UserDto.class);
