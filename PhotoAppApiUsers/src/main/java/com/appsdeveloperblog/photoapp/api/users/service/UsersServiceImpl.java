@@ -54,6 +54,7 @@ public class UsersServiceImpl implements UsersService {
 	public UserDto createUser(UserDto userDetails) {
 		// TODO Auto-generated method stub
 		userDetails.setUserId(UUID.randomUUID().toString());
+		System.out.println("createUser method");
 		userDetails.setEncryptedPassword(bCryptPasswordEncoder.encode(userDetails.getPassword()));
 		ModelMapper modelMapper = new ModelMapper(); 
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);

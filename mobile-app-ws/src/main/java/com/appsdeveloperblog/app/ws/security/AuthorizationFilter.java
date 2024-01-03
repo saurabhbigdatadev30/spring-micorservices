@@ -27,7 +27,7 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
                                     FilterChain chain) throws IOException, ServletException {
         
         String header = req.getHeader(SecurityConstants.HEADER_STRING);
-        
+        System.out.println("inside filter");
         if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
             chain.doFilter(req, res);
             return;
