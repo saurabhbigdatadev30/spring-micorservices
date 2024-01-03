@@ -54,8 +54,8 @@ public class UsersServiceImpl implements UsersService {
 	public UserDto createUser(UserDto userDetails) {
 		// TODO Auto-generated method stub
 		userDetails.setUserId(UUID.randomUUID().toString());
-		logger.info("IN MAIN BRANCH");
-		System.out.println("createUser method");
+		logger.info("IN MAIN BRANCH DEMO 1");
+		System.out.println("createUser method DEMO 1");
 		userDetails.setEncryptedPassword(bCryptPasswordEncoder.encode(userDetails.getPassword()));
 		ModelMapper modelMapper = new ModelMapper(); 
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
