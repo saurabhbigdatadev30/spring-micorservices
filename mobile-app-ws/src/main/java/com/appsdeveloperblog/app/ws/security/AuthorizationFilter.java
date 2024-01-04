@@ -42,7 +42,7 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
     
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
         String token = request.getHeader(SecurityConstants.HEADER_STRING);
-        
+        System.out.println("token is generated TEST COMMIT >>>>>")
         if (token != null) {
             
             token = token.replace(SecurityConstants.TOKEN_PREFIX, "");
