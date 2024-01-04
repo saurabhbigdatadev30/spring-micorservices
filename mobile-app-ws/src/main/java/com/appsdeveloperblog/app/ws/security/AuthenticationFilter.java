@@ -40,7 +40,7 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
         try {
         	
         	contentType = req.getHeader("Accept");
-        	
+        	System.out.println("CHANGES MADE IN GIT DEMO1 >>>>>>>>>");
             UserLoginRequestModel creds = new ObjectMapper()
                     .readValue(req.getInputStream(), UserLoginRequestModel.class);
             
