@@ -70,8 +70,14 @@ public class UserServiceImpl implements UserService {
 		String publicUserId = utils.generateUserId(30);
 		userEntity.setUserId(publicUserId);
 		userEntity.setEncryptedPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+
+		// Keeping both changes 
 		System.out.println("GIT SIDE CHANGES ... VERSION A");
+
+		System.out.println("GITHUB SIDE CHANGES ... VERSION A1");
+
 		userEntity.setEmailVerificationToken(utils.generateEmailVerificationToken(publicUserId));
+		System.out.println("GITHUB  SIDE CHANGES ... VERSION GITHUB1");
         /*
          * Note that UserEntity does'nt  has password field, but only has encrypted password field
          * This is a difference between DTO & Entity . A DTO is created at service layer which can 
