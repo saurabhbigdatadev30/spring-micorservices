@@ -70,6 +70,7 @@ public class UserServiceImpl implements UserService {
 		String publicUserId = utils.generateUserId(30);
 		userEntity.setUserId(publicUserId);
 		userEntity.setEncryptedPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+		System.out.println("GIT SIDE CHANGES ... VERSION A");
 		userEntity.setEmailVerificationToken(utils.generateEmailVerificationToken(publicUserId));
         /*
          * Note that UserEntity does'nt  has password field, but only has encrypted password field
