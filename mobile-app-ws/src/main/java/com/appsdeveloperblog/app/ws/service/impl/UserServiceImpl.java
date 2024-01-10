@@ -70,7 +70,7 @@ public class UserServiceImpl implements UserService {
 		String publicUserId = utils.generateUserId(30);
 		userEntity.setUserId(publicUserId);
 		userEntity.setEncryptedPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-		System.out.println("GIT SIDE CHANGES ... VERSION A1");
+		System.out.println("GITHUB SIDE CHANGES ... VERSION A1");
 		userEntity.setEmailVerificationToken(utils.generateEmailVerificationToken(publicUserId));
 		System.out.println("GITHUB  SIDE CHANGES ... VERSION GITHUB1");
         /*
